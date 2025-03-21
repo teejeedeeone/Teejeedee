@@ -60,7 +60,7 @@ def check_donchian_channel(symbol):
     upper = data['high'].shift(offset).rolling(window=length).max()  # Highest high over the period, shifted by offset
 
     # Get the 15th last candle's high, low, close, and timestamp
-    candle_index = -26  # 15th last candle
+    candle_index = -2  # 15th last candle
     candle_high = data['high'].iloc[candle_index]
     candle_low = data['low'].iloc[candle_index]
     candle_close = data['close'].iloc[candle_index]
