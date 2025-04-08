@@ -2,3 +2,4 @@ ccxt
 pandas
 matplotlib
 pybit
+dotenv
